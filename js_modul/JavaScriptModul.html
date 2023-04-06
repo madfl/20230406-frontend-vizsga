@@ -27,7 +27,27 @@
     </table>
     <script>
         //Ide illessze be a JavasScript kódot a teszteléshez
+       function KockaTerfogat(a){
+        return a*a*a;
+       }
+
+       function SzovegVisszafele(szoveg){
+        var splitString = szoveg.split("");       
+        var reverseArray = splitString.reverse();        
+        var joinArray = reverseArray.join("");
+        return joinArray;
+       }
+
+       function CegAtlagEletkor(vizsgaltObjektum){
+        var sum = 0;
+        var i = 0;
+       Object.keys(vizsgaltObjektum).forEach(key =>{
+       sum += vizsgaltObjektum[key].kor;       
+       })
+       atlag = Math.floor(sum / Object.keys(vizsgaltObjektum).length);       
+        return atlag;
        
+       }
 
 	
     </script>
