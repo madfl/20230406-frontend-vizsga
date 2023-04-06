@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col my-5">
+            <h1>Vizsgafeladat</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="beviteliMezo" class="form-label">Vizsgálandó szám</label>
+                    <input type="number" #beviteliMezo (keyup.enter)="isPrime(beviteliMezo.value)" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary form-control" (click)="EredmenyMentes()">Eredmény mentése</button>
+                </div>                
+        </form>
+        <p>{{valasz}}</p>
+        <p></p>
+        </div>
+    </div>
+</div>
