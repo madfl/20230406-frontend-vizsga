@@ -26,16 +26,16 @@ isPrime(str:string):void {
   if (answer == true)
   {        
       this.valasz = 'A szam prim.';
+      console.log(this.valasz);
       
   }else{       
       this.valasz = 'A szam nem prim.';       
+      console.log(this.valasz);
   }  
 }
-
-EredmenyMentes():string[]{
-  var eredmeny:string[] = [];
-  
-  return eredmeny;
+eredmenyek:string[] = [];
+EredmenyMentes():void{
+  this.eredmenyek.push(this.valasz);
 }
 }
 
